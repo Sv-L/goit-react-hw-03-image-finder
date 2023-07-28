@@ -10,7 +10,7 @@ import Error from './Error';
 
 export class App extends Component {
   state = {
-    search: null,
+    search: '',
     loading: false,
     currentPage: 1,
     totalPage: null,
