@@ -1,4 +1,4 @@
-import { Overlay, ModalContainer } from './Modal.styled';
+import { Overlay, ModalContainer, LargeImage } from './Modal.styled';
 import { Component } from 'react';
 import { createPortal } from 'react-dom';
 import PropTypes from 'prop-types';
@@ -37,7 +37,7 @@ export default class Modal extends Component {
     return createPortal(
       <Overlay onClick={this.handleClose}>
         <ModalContainer>
-          <img src={activeImg.largeImageURL} alt={activeImg.tags} />
+          <LargeImage src={activeImg.largeImageURL} alt={activeImg.tags} />
         </ModalContainer>
       </Overlay>,
       modalRoot

@@ -25,6 +25,7 @@ export default class Searchbar extends Component {
       toast('Please enter a search query');
       return;
     }
+    this.setState({ search: '' });
     this.props.onSubmit(prevState => ({
       search: this.state.search,
       currentPage: 1,
