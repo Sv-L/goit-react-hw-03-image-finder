@@ -32,7 +32,7 @@ class ImageGallery extends Component {
           if (images.total === 0) {
             return Promise.reject(
               new Error(
-                `There Are No Pictures for the Request of '${this.props.search}'`
+                `There are no pictures for the request of '${this.props.search}'`
               )
             );
           } else {
